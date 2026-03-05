@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TokenPlay Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo">🎮 TokenPlay Pro</div>
+
+<div class="balance">
+Tokens: <span id="tokens">1000</span>
+</div>
+</header>
+
+<section class="hero">
+<h1>Play Fun Token Games</h1>
+<p>Spin wheels, flip coins, launch rockets, and try blackjack.</p>
+</section>
+
+<section class="games">
+
+<div class="gameCard">
+<h3>🚀 Rocket Crash</h3>
+<input id="rocketBet" type="number" placeholder="Bet tokens">
+<button onclick="startRocket()">Launch</button>
+</div>
+
+<div class="gameCard">
+<h3>🎡 Multiplier Wheel</h3>
+<input id="wheelBet" type="number" placeholder="Bet tokens">
+<button onclick="spinWheel()">Spin</button>
+</div>
+
+<div class="gameCard">
+<h3>🪙 Coin Flip</h3>
+<input id="coinBet" type="number" placeholder="Bet tokens">
+<button onclick="coinFlip()">Flip</button>
+</div>
+
+<div class="gameCard">
+<h3>🃏 Blackjack</h3>
+<input id="blackjackBet" type="number" placeholder="Bet tokens">
+<button onclick="startBlackjack()">Play</button>
+</div>
+
+<div class="gameCard">
+<h3>🎲 Dice Double</h3>
+<input id="diceBet" type="number" placeholder="Bet tokens">
+<button onclick="rollDice()">Roll</button>
+</div>
+
+</section>
+
+<div id="adminPanel">
+<h2>Admin Panel</h2>
+
+<input id="giveAmount" placeholder="Give tokens">
+<button onclick="adminGive()">Give</button>
+
+<br><br>
+
+<button onclick="closeAdmin()">Close</button>
+</div>
+
+<footer>
+<p>TokenPlay Pro • Virtual Tokens Only</p>
+</footer>
+
+<script src="app.js"></script>
+<script src="games/wheel.js"></script>
+<script src="games/rocket.js"></script>
+<script src="games/coinflip.js"></script>
+<script src="games/blackjack.js"></script>
+<script src="games/dice.js"></script>
+
+</body>
+</html>
